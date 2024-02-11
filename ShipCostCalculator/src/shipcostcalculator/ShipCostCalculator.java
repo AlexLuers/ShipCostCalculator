@@ -15,10 +15,11 @@ public class ShipCostCalculator {
      */
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        //declaring variables
         double itemPrice;
         double shippingPrice;
         double totalPrice;
-        
+        //asking for input
         System.out.println("What is the price of your item?");
         itemPrice = in.nextDouble();
         if ((itemPrice) >= 100) 
@@ -29,7 +30,9 @@ public class ShipCostCalculator {
         {
             shippingPrice = itemPrice * 0.2;
         }
+        //doing the math
         totalPrice = shippingPrice + itemPrice;
+        //outputs
         System.out.println("The shipping price is " + shippingPrice + "$");
         System.out.println("The total cost of your item is " + totalPrice + "$");
     }
